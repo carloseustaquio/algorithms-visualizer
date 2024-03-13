@@ -1,5 +1,5 @@
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -19,6 +19,25 @@ h1 {
 
 h3 {
   margin-top: 0;
+}
+
+.gh-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.gh-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #0366d6; /* GitHub link color */
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.gh-link a:hover {
+  background-color: #0356c6; /* Darker color on hover */
 }
 
 .main-container {
