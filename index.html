@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algovi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Algo Visualizer</h1>
+
+    <div class="main-container">
+      <div>
+        <h3>Path finding algorithm</h3>
+        <canvas id="canvas" height="300" width="800"></canvas>
+        <div>
+          <label for="speed">Speed</label>
+          <input type="number" min="5" max="5000" id="speed" type="text" />
+          <button id="speedBtn">Start</button>
+        </div>
+      </div>
+      <div class="analysis-container">
+        <h3>Analysis:</h3>
+        <div id="analysis"></div>
+      </div >
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
