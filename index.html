@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Algo Visualizer</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./path-finding/path-finding.css" />
+    <link rel="stylesheet" href="./quick-sort/quick-sort.css" />
     <!-- SEO Image -->
     <meta property="og:image" content="./image.jpg" />
     <meta property="og:image:width" content="800" />
@@ -12,27 +14,66 @@
   </head>
   <body>
     <h1>Algo Visualizer</h1>
+    <div class="gh-link">
+      <a href="https://github.com/carloseustaquio/algorithms-visualizer"
+        >See on GitHub</a
+      >
+    </div>
 
-    <div class="main-container">
-      <div>
-        <h3>Path finding algorithm</h3>
-        <canvas id="canvas" height="300" width="800"></canvas>
+    <!-- Path Fiding Algorithm -->
+    <div class="block">
+      <div class="main-container path-finding">
         <div>
-          <label for="speed">Speed</label>
-          <input type="number" min="5" max="5000" id="speed" type="text" />
-          <button id="speedBtn">Start</button>
+          <h3>Path finding algorithm</h3>
+          <div>
+            <label for="path-finding-speed">Speed</label>
+            <input
+              type="number"
+              min="5"
+              max="5000"
+              id="path-finding-speed"
+              type="text"
+            />
+            <button id="path-finding-speedBtn">Restart</button>
+          </div>
+          <canvas id="path-finding-canvas" height="300" width="800"></canvas>
+        </div>
+        <div class="analysis-container">
+          <h3>Analysis:</h3>
+          <div id="path-finding-analysis"></div>
         </div>
       </div>
-      <div class="analysis-container">
-        <h3>Analysis:</h3>
-        <div id="analysis"></div>
-      </div >
     </div>
+    <script src="./path-finding/path-finding.js"></script>
 
-    <div class="gh-link">
-      <a href="https://github.com/carloseustaquio/algorithms-visualizer">See on GitHub</a>
+    <!-- Quick Sort Algorithm -->
+    <div class="block">
+      <div class="main-container quick-sort">
+        <div>
+          <h3>Quick sort algorithm</h3>
+          <form id="quick-sort-options-form">
+            <div class="header-options">
+              <div>
+                <label for="quick-sort-speed">Speed</label>
+                <input type="number" min="5" max="5000" id="quick-sort-speed" />
+              </div>
+              <div>
+                <label for="quick-sort-array">Array</label>
+                <input
+                  type="text"
+                  minlength="5"
+                  maxlength="30"
+                  width="300"
+                  id="quick-sort-array"
+                />
+              </div>
+              <button id="quick-sort-speedBtn">Restart</button>
+            </div>
+          </form>
+          <canvas id="quick-sort-canvas" height="500" width="800"></canvas>
+        </div>
+      </div>
     </div>
-
-    <script src="main.js"></script>
+    <script src="./quick-sort/quick-sort.js"></script>
   </body>
 </html>

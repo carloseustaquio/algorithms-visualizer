@@ -1,0 +1,21 @@
+#path-finding-analysis {
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.path-finding.main-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.path-finding.main-container > div {
+	height: 420px;
+}
+
+.path-finding.main-container>div:first-child {
+  flex: 1;
+}
